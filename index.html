@@ -14,5 +14,39 @@
   <code>git clone [repo / URL]</code>
   <p>Clone a repository into a specified folder on your local machine:</p>
   <code>git clone [repo / URL] [folder]</code>
+  <h1>Making Changes</h1>
+  <p>Stage changes for the next commit:</p>
+  <code>git add [file/directory]</code>
+  <p>Stage everything in the directory for an initial commit:</p>
+  <code>git add .</code>
+  <p>Commit staged snapshots in the version history with a descriptive message included in the command:</p>
+  <code>git commit -m "[descriptive_message]"</code>
+  <h1>Undoing Changes</h1>
+  <p>Undo changes in a file or directory and create a new commit with the git revert command:</p>
+  <code>git revert [file/directory]</code>
+  <p>Unstage a file without overwriting changes:</p>
+  <code>git reset [file]</code>
+  <p>Undo any changes introduced after the specified commit:</p>
+  <code>git reset [commit]</code>
+  <p>Show untracked files which will be removed when you run git clean (do a dry run):</p>
+  <code>git clean -n</code>
+  <p>Remove untracked files:</p>
+  <code>git clean -f</code>
+  <h1>Rewriting History</h1>
+  <p>Replace the last commit with a combination of the staged changes and the last commit combined:</p>
+  <code>git commit --amend</code>
+  <p>Rebase the current branch with the specified base (it can be a branch name, tag, reference to a HEAD, or a commit ID):</p>
+  <code>git rebase [base]</code>
+  <p>List changes made to the HEAD of the local repository:</p>
+  <code>git reflog</code>
+  <h1>Remote Repositories</h1>
+  <p>Create a new connection to a remote repository (give it a name to serve as a shortcut to the URL):</p>
+  <code>git remote add [name] [URL]</code>
+  <p>Fetch a branch from a remote repository:</p>
+  <code>git fetch [remote_repo] [branch]</code>
+  <p>Fetch a repository and merge it with the local copy:</p>
+  <code>git pull [remote_repo]</code>
+  <o>Push a branch to a remote repository with all its commits and objects:</o>
+  <code>git push [remote_repo] [branch]</code>
 </body>
 </html>
